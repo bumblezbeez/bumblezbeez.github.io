@@ -1,0 +1,48 @@
+* {box-sizing: border-box;}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.header {
+    grid-area: h;
+}
+.main {
+    grid-area: m;
+}
+.portfolio {
+    grid-area: p;
+}
+.footer {
+    grid-area: f;
+}
+
+/* where we are setting the size for mobile */
+.wrapper {
+    display: grid;
+    grid-auto-rows: 15% auto auto 7%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "h"
+      "m"
+      "p"
+      "f";
+}
+@media (min-width: 600px) {
+        h1 {
+            font-size: 1.5em;
+        }
+    }
+/* when the screen is 750px or larger, do this */
+@media (min-width: 750px) {
+   .wrapper {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 20% auto auto 7%;
+        grid-template-areas: 
+          "h h h h h h h h h h h h"
+          "m m m m m m m m m m m m"
+          "p p p p p p p p p p p p"
+          "f f f f f f f f f f f f";
+    }
+}
+
