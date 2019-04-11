@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="resume.css">
 <link rel="stylesheet" type="text/css" href="grid.css">
 <link rel="stylesheet" type="text/css" href="animations.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:italic,100,400,600,800" rel="stylesheet">
 
@@ -15,10 +16,20 @@
 <div class="wrapper">
 
 <!-- Document Header -->	
-<div class="header">
-    <header>
-        <p>Contact Resume</p>
-    </header>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li>•</li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li>•</li>
+            <li><a href="#resume">Resume</a></li>
+            <li>•</li>
+            <li><a href="#save">Save the Bees</a></li>
+            <li>•</li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <div class="logo">
         <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 576 576" style="enable-background:new 0 0 576 576;" xml:space="preserve">
@@ -154,19 +165,25 @@
        </g>
         </svg>
     </div>
-</div>
+</header>
 
 <div class="main">
-        <div class="aboutOne">
+        <div id="about">
             About Me
         </div>
-        <div class="aboutTwo">
+        <div class="about">
+            <div class="imageContainer">
+                <img src="me.jpg" alt="Sarena Letourneau">
+            </div>
+            
+            <div class="side">
             My name is Sarena Letourneau and I love bees. 
             So much so I made it the center of my brand.
             I am based in Seekonk Massachusetts, my home town.
             I am a graphic design major at the University 
-            of Massachusetts Dartmouth. I attended a 
-            vocational high school where I satrted learning 
+            of Massachusetts Dartmouth, and I am also first 
+            generation college student in my family. I attended a 
+            vocational high school where I started learning 
             the basics about graphic design. I have a variety 
             of different pieces in graphic design, digital 
             illustration, photography, and traditional 
@@ -174,29 +191,60 @@
             look at my work and contact me if you wish.
             Also check out my youtube channel where I 
             sometimes post videos. I am currently looking for work.<br>
-            <p>Have a bee-utiful day and keep buzzing!</p>
+            <p class="bold">Have a bee-utiful day and keep buzzing!</p>
         </div>
+        </div>
+    </div>
 </div>
 
-<div class="portfolio">
+<br>
+
+<div id="portfolio">
     <div class="graphic">
         <p>Graphic Design</p>
+        <img src="bigPoster.jpg" alt="black and white poster">
     </div>
     <div class="digital">
         <p>Digital Illustration</p>
+            <img src="digital.jpg" alt="green mandala">
     </div>
     <div class="images">
         <p>Photography</p>
+        <img src="light.jpg" alt="red lantern">
+        <img src="antique.jpg" alt="antique statue">
+        <img src="aquarium.jpg" alt="aquarium tank">
+        <img src="beach.jpg" alt="sand and water">
+        <img src="boston.jpg" alt="boston buildings">
     </div>
-    <div class="draw">
+    <div class="trad">
         <p>Drawings/Paintings</p>
+        <img src="color.jpg" alt="color story">
+        <img src="free.jpg" alt="floating head">
+        <img src="initial.jpg" alt="my first initial">
+        <img src="map.jpg" alt="painting of a map">
+        <img src="mask.jpg" alt="earth's mask">
+        <img src="tree.jpg" alt="skeleton tree">
     </div>
 </div>
 
-<div class="footer">
-    
+<div id="resume">
+
 </div>
 
+<div id="save">
+<p>Save the Bees</p>
+<a href="https://www.greenpeace.org/usa/sustainable-agriculture/save-the-bees/" target="_blank">Visit Greenpeace.com to learn more!</a>
+</div>
+
+<div id="contact">
+    sarenaletourneau@gmail.com<br>
+    774-991-4485
+</div>
+
+<footer>
+    
+</footer>
+<!-- <a href="https://www.youtube.com/channel/UCAYQTm0C8KLLrByZR1jEF2w" target="_blank">Visit my Youtube Channel!</a> -->
 
 </body>
 </html>

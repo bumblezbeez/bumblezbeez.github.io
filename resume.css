@@ -3,46 +3,66 @@ body {
   color: #505050;
 }
 
-header{
+nav{
     background: #FFE8E8;
     padding: 10pt;
     font-weight: 600;
-    word-spacing: 20pt;
+}
+li{
+  display: inline;
+}
+a{
+  color: #505050;
 }
 
 .logo{
   width: 50%;
   margin-left: 23%;
   position: relative;
+  animation: pulse 2s infinite;
+  -webkit-animation: pulse 2s infinite;
 }
 
-.aboutOne{
+#about{
   background: #FFE8E8;
   padding: 10pt;
   font-weight: 600;
   text-align: center;
 }
-.aboutTwo{
-  text-align: center;
+
+.about{
   padding: 20pt;
 }
-.aboutTwo >p{
-  font-weight: bold;
+.bold{
+  font-weight: 700;
 }
 
-.portfolio{
+#portfolio{
   background: #FFE8E8;
   padding: 30pt;
-  display: grid;
-  grid-gap: 7px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(2, 200px);
 }
-.portfolio >div{
-  background: white;
+#portfolio >div{
+  /* background: white; */
+  padding: 10pt;
+  font-weight: 600;
+}
+img{
+  border: solid 5pt white;
 }
 
-.footer{
+#resume{
+  padding: 20pt;
+}
+
+#save{
+  padding: 20pt;
+}
+
+#contact{
+  padding: 20pt;
+}
+
+footer{
   height: 40pt;
   background: #A5BF94;
 }
