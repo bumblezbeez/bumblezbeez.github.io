@@ -4,86 +4,79 @@
     margin: 0 auto;
 }
 
-header {
-    grid-area: h;
+nav{
+    grid-area: n;
 }
-.main {
-    grid-area: m;
+
+#about{
+    grid-area: a;
 }
-#portfolio {
+
+#portfolio{
     grid-area: p;
 }
-#resume {
-    grid-area: r;
-}
-#save {
+
+#save{
     grid-area: s;
 }
-#contact {
+
+#contact{
     grid-area: c;
 }
-footer {
+
+#footer{
     grid-area: f;
 }
 
-/* where we are setting the size for mobile */
-.wrapper {
+.wrapper{
     display: grid;
-    grid-auto-rows: 15% auto auto auto 7%;
+    grid-auto-rows: 20% auto auto auto auto auto 7%;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-      "h"
-      "m"
-      "p"
-      "r"
-      "s"
-      "c"
-      "f";
-}
-/* @media (min-width: 600px) {
-        h1 {
-            font-size: 1em;
-        }
-    } */
-/* when the screen is 750px or larger, do this */
-@media (min-width: 750px) {
-   .wrapper {
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 20% auto auto auto auto auto 7%;
-        grid-template-areas: 
-          "h h h h h h h h h h h h"
-          "m m m m m m m m m m m m"
-          "p p p p p p p p p p p p"
-          "r r r r r r r r r r r r"
-          "s s s s s s s s s s s s"
-          "c c c c c c c c c c c c"
-          "f f f f f f f f f f f f";
-    }
+    grid-template-areas:
+        "n"
+        "a"
+        "p"
+        "s"
+        "c"
+        "f";
 }
 
-.side {
-    grid-area: si;
-    margin: 0 auto;
+@media (min-width: 750px) {
+    .wrapper{
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: 20% auto auto auto 7%;
+        grid-template-areas:
+        "n n n n n n n n n n n n"
+        "a a a a a a a a a a a a"
+        "p p p p p p p p p p p p"
+        "s s s s s s s s s s s s"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+    }
 }
 .imageContainer{
-    grid-area: ima;
-    display: inline-grid;
+    grid-area: i;
 }
-.about {
+
+.side{
+    grid-area: si;
+}
+
+.aboutOne{
     display: grid;
-    margin: 0 auto;
     grid-auto-rows: auto;
     grid-template-columns: 1fr;
     grid-template-areas: 
-      "ima"
-      "si";
+        "i"
+        "si";
 }
+
 @media (min-width: 750px) {
-    .about {
-         grid-template-columns: 40% auto;
-         grid-gap: 30px;
-         grid-template-rows: auto;
-         grid-template-areas: 
-           "ima si";
-     }
- }
+    .aboutOne{
+        grid-template-columns: 40% auto;
+        grid-gap: 40px;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "i si";
+    }
+}
