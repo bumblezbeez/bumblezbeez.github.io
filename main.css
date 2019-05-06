@@ -1,95 +1,42 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: #505050;
-  }
-  .wrapper{
-    width: 50%;
-    margin-left: 23%;
-    position: relative;
-    animation: pulse 2s infinite;
-    -webkit-animation: pulse 2s infinite;
-  }
-
-  nav{
-      background: #FFE8E8;
-      padding: 5px;
-      text-align: center;
-      font-weight: 600;
-      font-size: 20px;
-  }
-  li{
-    display: inline;
-  }
-  a{
-    color: #505050;
-  }
-
-  #about{
-      background: #FFE8E8;
-      margin-top: 60px;
-      padding: 40px;
-  }
-  .side{
-      padding: 20px;
-      margin: 0 auto;
-  }
-
-  .imageContainer{
-      display: inline-grid;
-      width: 200%;
-  }
-  img{
-    border: solid 5pt white;
-  }
-
-  #portfolio{
-    background: #FFE8E8;
-    margin-top: 60px;
-    padding: 40px;
-  }
-  .container {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    /* grid-auto-rows: 75px; */
-    /* grid-auto-flow: dense; */
+  font-family: 'Montserrat', sans-serif;
+  color: #505050;
+}
+/* styling the logo at the top */
+.wrapper{
+  width: 50%;
+  margin-left: 23%;
+  position: relative;
+  animation: pulse 2s infinite;
+  -webkit-animation: pulse 2s infinite;
+}
+/* styling the nav bar */
+nav{
+  background: #FFE8E8;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+a{
+color: #505050;
+display: inline;
+}
+/* styling for divs */
+#about, #portfolio, #save, #contact{
+  background: #FFE8E8;
+  margin-top: 60px;
+  padding: 40px;
+}
+/* styling for text in about me */
+.side{
+  margin: 0;
+  line-height: 25px;
 }
 
-.horizontal {
-    grid-column: span 2;
+#footer{
+  background: #A5BF94;
+  margin-top: 60px;
+  padding: 40px;
+  height: 40px;
 }
-
-.vertical {
-    grid-row: span 2;
-}
-
-.big {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-}
-
-  #resume{
-      background: #FFE8E8;
-      margin-top: 60px;
-      padding: 40px;
-  }
-
-  #save{
-      background: #FFE8E8;
-      margin-top: 60px;
-      padding: 40px;
-  }
-
-  #contact{
-      background: #FFE8E8;
-      margin-top: 60px;
-      padding: 40px;
-  }
-
-  #footer{
-      background: #A5BF94;
-      margin-top: 60px;
-      padding: 40px;
-      height: 40px;
-  }

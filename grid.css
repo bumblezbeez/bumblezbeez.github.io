@@ -54,6 +54,7 @@ nav{
         "f f f f f f f f f f f f";
     }
 }
+/* about me grid */
 .imageContainer{
     grid-area: i;
 }
@@ -73,7 +74,7 @@ nav{
 
 @media (min-width: 750px) {
     .aboutOne{
-        grid-template-columns: 40% auto;
+        grid-template-columns: 270px auto;
         grid-gap: 40px;
         grid-template-rows: auto;
         grid-template-areas:
