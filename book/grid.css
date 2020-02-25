@@ -1,0 +1,83 @@
+* {box-sizing: border-box;}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+nav{
+    grid-area: n;
+}
+
+#about{
+    grid-area: a;
+}
+
+#portfolio{
+    grid-area: p;
+}
+
+#save{
+    grid-area: s;
+}
+
+#contact{
+    grid-area: c;
+}
+
+#footer{
+    grid-area: f;
+}
+
+.wrapper{
+    display: grid;
+    grid-auto-rows: 20% auto auto auto auto auto 7%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "n"
+        "a"
+        "p"
+        "s"
+        "c"
+        "f";
+}
+
+@media (min-width: 750px) {
+    .wrapper{
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: 20% auto auto auto 7%;
+        grid-template-areas:
+        "n n n n n n n n n n n n"
+        "a a a a a a a a a a a a"
+        "p p p p p p p p p p p p"
+        "s s s s s s s s s s s s"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+    }
+}
+/* about me grid */
+.imageContainer{
+    grid-area: i;
+}
+
+.side{
+    grid-area: si;
+}
+
+.aboutOne{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "i"
+        "si";
+}
+
+@media (min-width: 750px) {
+    .aboutOne{
+        grid-template-columns: 270px auto;
+        grid-gap: 40px;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "i si";
+    }
+}
